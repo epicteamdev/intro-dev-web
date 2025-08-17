@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Viagens - MapKeep</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Tilt+Warp&family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<body id="timeline-page-body">
+<header id="main-header">
+    <a href="main.html" class="logo-text">MapKeep</a>
+    <nav>
+        <span id="user-greeting"></span>
+        <a href="trips.html" class="active-nav">Minhas Viagens</a>
+        <a href="main.html">Mapa</a>
+        <button id="logout-button">Sair</button>
+    </nav>
+</header>
+
+<main>
+    <section class="content-panel">
+        <h2>Minhas Viagens Registradas</h2>
+        <div id="trip-list-container">
+            <p class="no-trips-message">Nenhuma viagem ainda.</p>
+        </div>
+    </section>
+    <button id="add-trip-fab" class="fab">+</button>
+</main>
+
+<div id="add-trip-modal" class="modal-backdrop hidden">
+    <div class="modal-content">
+        <header class="modal-header">
+            <h3 id="add-trip-modal-title">Adicionar Nova Viagem</h3>
+            <button class="close-modal-button" data-modal-id="add-trip-modal">&times;</button>
+        </header>
+        <form id="trip-form" class="modal-body">
+            <input type="hidden" id="trip-id-input">
+            <div><label for="trip-title-input">Cidade/Local:</label><input type="text" id="trip-title-input" required></div>
+            <div><label for="trip-date-input">Data:</label><input type="date" id="trip-date-input" required></div>
+            <div><label for="trip-state-form-input">Estado:</label><input type="text" id="trip-state-form-input" required></div>
+            <div><label for="trip-description-input">Memórias:</label><textarea id="trip-description-input" rows="3" required></textarea></div>
+            <div><label for="trip-photos-input">Fotos:</label><input type="file" id="trip-photos-input" accept="image/*" multiple><div class="photo-preview-container"></div></div>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</div>
+
+<div id="trip-detail-modal" class="modal-backdrop hidden">
+    <div class="modal-content">
+        <header class="modal-header">
+            <h3 id="detail-modal-title">Detalhes da Viagem</h3>
+            <button class="close-modal-button" data-modal-id="trip-detail-modal">&times;</button>
+        </header>
+        <div class="modal-body">
+            <img src="https://placehold.co/300x200?text=Viagem" alt="Imagem da Viagem" id="trip-detail-image-modal">
+            <h3 id="detail-modal-trip-title" style="text-align:center; margin-top:10px;"></h3>
+            <p id="trip-detail-date-modal" style="text-align:center; font-size:0.9em; color:#555;"></p>
+            <p id="trip-detail-description-modal"></p>
+            <div id="trip-detail-photos-container" class="photo-gallery-grid"></div>
+        </div>
+        <footer class="modal-footer">
+            <button id="edit-trip-from-detail-button">Editar</button>
+            <button id="delete-trip-button" style="background-color: #ffcccc; border-color:red; color:red;">Excluir</button>
+        </footer>
+    </div>
+</div>
+
+<footer id="main-footer"><p>&copy; 2025 MapKeep</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

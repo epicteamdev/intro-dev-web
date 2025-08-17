@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo dos Copos - Desafio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Jogo dos Copos</h1>
+    <div class="phase-indicator">FASE 1</div>
+  </div>
+
+  <div class="game-container">
+    <div class="game-area">
+      <div class="cups-container">
+        <div class="cup" data-index="0">
+          <img src="img/red_cup.png" class="cup-img">
+          <img src="img/ball_red.png" class="ball hidden-ball">
+        </div>
+        <div class="cup" data-index="1">
+          <img src="img/red_cup.png" class="cup-img">
+          <img src="img/ball_red.png" class="ball hidden-ball">
+        </div>
+        <div class="cup" data-index="2">
+          <img src="img/red_cup.png" class="cup-img">
+          <img src="img/ball_red.png" class="ball hidden-ball">
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="start">JOGAR</button>
+        <button id="tutorial">Tutorial</button>
+      </div>
+
+      <div class="attempts">• Tentativas: 0 • Pontos: 0 • Fase: 1</div>
+    </div>
+
+    <div class="leaderboard">
+      <h2 class="leaderboard-toggle"> PLACAR </h2>
+      <div class="leaderboard-content">
+        <ul class="leaderboard-list">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
