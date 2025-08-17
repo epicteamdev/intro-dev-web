@@ -25,4 +25,4 @@ Ao final, espera-se que cada participante seja capaz de **projetar e desenvolver
 - **Resultados esperados:** Interfaces digitais acessíveis, estilizadas e interativas criadas pelos participantes  
 
 ## Link para GPU
-[🔗 Acesse o Google Colab (GPU)](https://sistemas.uft.edu.br/gpu/admin/app/curso/8145/show)
+[🔗 GPU - UFT)](https://sistemas.uft.edu.br/gpu/admin/app/curso/8145/show)
