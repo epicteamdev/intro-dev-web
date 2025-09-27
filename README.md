@@ -23,5 +23,7 @@ Ao final, os participantes foram capazes de **projetar e desenvolver páginas we
 - **Metodologia:** Aprendizagem ativa, projetos práticos, colaboração em grupo  
 - **Resultados alcançados:** Interfaces digitais acessíveis, estilizadas e interativas criadas pelos participantes  
 
-## Link para GPU
-[🔗 GPU - UFT](https://sistemas.uft.edu.br/gpu/admin/app/curso/8145/show)
+## [📍 Primeira Edição do Projeto](https://github.com/epicteamdev/intro-dev-web/blob/main/timeline/2025-1/Primeira%20Edi%C3%A7%C3%A3o.markdown)
+
+
+## [🔗 GPU - UFT](https://sistemas.uft.edu.br/gpu/admin/app/curso/8145/show)
