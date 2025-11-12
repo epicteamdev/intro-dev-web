@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Prática – Formulário de Cadastro</title>
+    <style>
+        :root {
+            --cor-fundo: #f4f5f7;
+            --cor-primaria: #1e2a38;
+            --cor-secundaria: #2e3b4e;
+            --cor-destaque: #2d89ef;
+            --cor-texto: #222;
+            --cor-caixa: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Roboto, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--cor-primaria);
+            color: #fff;
+            padding: 30px 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 1.9rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--cor-caixa);
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--cor-secundaria);
+            border-left: 4px solid var(--cor-destaque);
+            padding-left: 10px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        p, li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: #fafafa;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 8px 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: var(--cor-secundaria);
+            color: #fff;
+        }
+
+        code, pre {
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            padding: 3px 6px;
+            font-family: "Consolas", monospace;
+            font-size: 0.9rem;
+        }
+
+        pre {
+            display: block;
+            padding: 10px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+
+        blockquote {
+            background-color: #eef4ff;
+            border-left: 4px solid var(--cor-destaque);
+            padding: 10px 15px;
+            font-style: italic;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer hr {
+            border: none;
+            height: 1px;
+            background: #ccc;
+            margin: 20px 0;
+        }
+
+        a {
+            color: var(--cor-destaque);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            table th, table td {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Atividade Prática – Formulário de Cadastro</h1>
+    <p><strong>Objetivo:</strong> Praticar o uso das <em>tags</em> de formulário e a estrutura básica de uma página HTML.</p>
+</header>
+
+<main>
+    <section>
+        <h2>Instruções</h2>
+        <ol>
+            <li>Crie um novo arquivo chamado <strong>cadastro.html</strong>.</li>
+            <li>Estruture uma página completa com as seções principais do HTML:</li>
+        </ol>
+        <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        <p>O tema será uma <strong>página de cadastro de clientes</strong> para uma loja fictícia.</p>
+    </section>
+
+    <section>
+        <h2>Cabeçalho</h2>
+        <ul>
+            <li>Título principal: <code>&lt;h1&gt;</code> – por exemplo: <em>Cadastro de Clientes da Loja Fábio Tech</em></li>
+            <li>Parágrafo explicando o objetivo do formulário.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Formulário</h2>
+        <p>Crie um formulário usando a tag <code>&lt;form&gt;</code> com os seguintes campos:</p>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Campo</th>
+                <th>Tipo de elemento</th>
+                <th>Observações</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr><td>Nome completo</td><td><code>&lt;input type="text"&gt;</code></td><td>Campo de texto simples</td></tr>
+            <tr><td>E-mail</td><td><code>&lt;input type="email"&gt;</code></td><td>Valida formato de e-mail</td></tr>
+            <tr><td>Senha</td><td><code>&lt;input type="password"&gt;</code></td><td>Campo de senha</td></tr>
+            <tr><td>Data de nascimento</td><td><code>&lt;input type="date"&gt;</code></td><td>Seleciona data</td></tr>
+            <tr><td>Gênero</td><td><code>&lt;input type="radio"&gt;</code></td><td>Masculino / Feminino / Outro</td></tr>
+            <tr><td>Interesses</td><td><code>&lt;input type="checkbox"&gt;</code></td><td>Tecnologia / Jogos / Música / Esportes</td></tr>
+            <tr><td>Cidade/Estado</td><td><code>&lt;input type="text"&gt;</code></td><td>Campo aberto</td></tr>
+            <tr><td>Comentário adicional</td><td><code>&lt;textarea&gt;</code></td><td>Espaço para mensagem</td></tr>
+            <tr><td>Enviar formulário</td><td><code>&lt;input type="submit"&gt;</code></td><td>Botão de envio</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Outros elementos obrigatórios</h2>
+        <ul>
+            <li>Use <code>&lt;fieldset&gt;</code> e <code>&lt;legend&gt;</code> para agrupar partes do formulário.</li>
+            <li>Use <code>&lt;label&gt;</code> corretamente associada a cada <code>&lt;input&gt;</code> (usando o atributo <code>for</code>).</li>
+            <li>Inclua uma linha divisória com <code>&lt;hr&gt;</code>.</li>
+            <li>Adicione uma tabela (<code>&lt;table&gt;</code>) com três clientes fictícios já cadastrados:</li>
+        </ul>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Cidade</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr><td>Maria Silva</td><td>maria@email.com</td><td>Palmas - TO</td></tr>
+            <tr><td>João Lima</td><td>joao@email.com</td><td>Goiânia - GO</td></tr>
+            <tr><td>Ana Costa</td><td>ana@email.com</td><td>Belém - PA</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Desafio bônus (opcional)</h2>
+        <ul>
+            <li>Adicione um link para voltar à página inicial:</li>
+            <pre>&lt;a href="index.html"&gt;Voltar&lt;/a&gt;</pre>
+            <li>Use <code>&lt;abbr&gt;</code> ou <code>&lt;address&gt;</code> em algum ponto do código (por exemplo, o endereço da loja).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Entrega</h2>
+        <ul>
+            <li>Nome do arquivo: <strong>cadastro.html</strong></li>
+            <li>Não será permitido o uso de inteligência artificial para realizar a tarefa!</li>
+        </ul>
+    </section>
+</main>
+</body>
+</html>
