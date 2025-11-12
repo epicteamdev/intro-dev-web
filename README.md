@@ -27,3 +27,8 @@ Ao final, os participantes foram capazes de **projetar e desenvolver páginas we
 
 
 ## [🔗 GPU - UFT](https://sistemas.uft.edu.br/gpu/admin/app/curso/8145/show)
+
+## Atividades Segunda Edição
+Atividade Prática de HTML - Criação de um Formulário
+
+Clique aqui para acessar o [formulário criado pelos alunos](https://epicteamdev.github.io/intro-dev-web/timeline/2025-2/atividades/index.html).
